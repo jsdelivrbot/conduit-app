@@ -19,4 +19,8 @@ router.get('/git-users', function(req, res) {
   });
 });
 
+router.get('/test', function(req, res) {
+  res.send("hello word");
+});
+
 module.exports = router;

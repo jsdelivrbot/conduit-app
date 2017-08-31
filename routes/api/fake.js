@@ -28,4 +28,12 @@ router.get('/cool', function(req, res) {
   res.send(cool());
 });
 
+router.get('/times', function(req, res) {
+    var result = ''
+    var times = process.env.TIMES || 5
+    for (i=0; i < times; i++)
+      result += i + ' ';
+  res.send(result);
+});
+
 module.exports = router;

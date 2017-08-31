@@ -13,8 +13,12 @@
     "url": "git+https://github.com/maxmax/conduit-app.git"
   },
   "license": "ISC",
+  "engines": {
+    "node": "8.1.2"
+  },
   "dependencies": {
     "body-parser": "1.15.0",
+    "cool-ascii-faces": "1.3.4",
     "cors": "2.7.1",
     "ejs": "2.4.1",
     "errorhandler": "1.4.3",
@@ -35,9 +39,5 @@
   },
   "devDependencies": {
     "nodemon": "^1.11.0"
-  },
-  "engines": {
-    "node": ">=6.x",
-    "npm": "3.x"
   }
 }

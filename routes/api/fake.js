@@ -1,5 +1,6 @@
 var router = require('express').Router();
 const request = require('request');
+var cool = require('cool-ascii-faces');
 
 //fake users
 const options = {
@@ -21,6 +22,10 @@ router.get('/git-users', function(req, res) {
 
 router.get('/test', function(req, res) {
   res.send("hello word");
+});
+
+router.get('/cool', function(req, res) {
+  res.send(cool());
 });
 
 module.exports = router;
